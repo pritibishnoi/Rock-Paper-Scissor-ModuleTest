@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Module Test</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="container1 con">
+            <div class="scoreBoard">
+                <div class="scoreBoard-title">
+                    <p>Rock</p>
+                    <p>Paper</p>
+                    <p>Scissors</p>
+                </div>
+                <div class="score-cards">
+                    <div class="scoreCard1 card">
+                        <p> YOUR <br> SCORE</p>
+                        <p id="userScore">0</p>
+                    </div>
+                    <div class="scoreCard2 card" >
+                        <p>COMPUTER SCORE</p>
+                        <p id="computerScore">0</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>        
+
+    <div class="container2 con">
+        <div class="game-section" >
+            <div class="triAngle">
+
+                <!-- rock , line-1 & scissors part -->
+                <div class="firstPart">
+                    <div class="choose-opt rock" id="rock">
+                        <img src="./images/rock.png.png">
+                    </div>
+                    <div class="line-1"></div>
+                    <div class="choose-opt scissor" id="scissor">
+                        <img src="./images/scissor.png.png">
+                    </div>
+                </div>
+
+                <!-- line-2 & line-3 part -->
+                <div class="secondPart">
+                    <div class="line-2"></div>
+                    <div class="line-3"></div>
+                </div>
+
+                <!-- paper part -->
+                <div class="thirdPart">
+                    <div class="choose-opt paper pap" id="paper">
+                        <img src="./images/paper.png.png">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="result" >
+            <div class="mobile-result"  >
+                <p>
+                    <span id="resultSpan1">YOU WIN</span>
+                    <br>
+                        AGAINST MOBILE
+                </p>
+            </div>
+            <div class="finalResult" style="display:none">
+                <div class="user-choosed user">
+                    <p>YOU PICKED</p>
+                    <div class="chooses-opt" >
+                        <img src="" alt="user select image" id="myResult" >
+                        <div id="userWinIndicator" class="winIndicator" style="display: flex;">
+                            <div class=" first circle " style="--circle :1" ></div>
+                            <div class=" second circle " style="--circle :2" ></div>
+                            <div class="third circle " style="--circle :3"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pc-result">
+                    <p>
+                        <span id="resultSpan">You Win</span>
+                        <br>
+                        AGAINST PC
+                    </p>
+                    <button onclick="window.location.reload()" class="play-again">PLAY AGAIN</button>
+                </div>
+
+                <div class="system-choosed system">
+                    <p>PC PICKED</p>
+                    <div class="choose-opt paper">
+                        <img src alt ="ai select image" id = aiResult>
+                        <div id="aiWinIndicator" class="winIndicator" style="display: flex;">
+                            <div class="first circle" style="--circle :1" ></div>
+                            <div class="second circle"style="--circle :2" ></div>
+                            <div class="third circle" style="--circle :3"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mobile-result">
+                <button onclick="window.location.reload()" class="play-again" id="replay-choose">REPLAY</button>
+            </div>
+        </div> 
+    </div>    
+ 
+    
+    
+         <div class="rulesPart" style="display:none">
+            <div class="rulesBox">
+                <h3 class="rulesHeader">Game Rules</h3>
+                <div class="closeBtn">
+                    <img src="./images/X.png">
+                </div>
+                <div class="rulePoints">
+                    <ul>
+
+                        <li>Rock beats scissors, scissors beat paper, and paper beats rock.</li>
+                        <li>Agree ahead of time whether you'll count off “rock, paper, scissors, shoot” or just “rock, paper, scissors.”</li>
+                        <li>Use rock, paper, scissors to settle minor decisions or simply play to pass the time</li>
+                        <li>If both players lay down the same hand, each player lays down another hand</li>
+
+                    </ul>
+                </div>
+            </div>    
+        </div>
+    <button class="rulesBtn">RULES</button>  
+             <button  class="nextBtn" style="display:none"><a href="winner.html">NEXT</a></button>  
+
+    </div>
+    
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

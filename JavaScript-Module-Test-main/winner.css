@@ -1,0 +1,114 @@
+*{
+    padding: 0;
+    margin: 0;
+    background-color:  #89C15E;
+}
+.prize{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.cup{
+    position: relative;
+    bottom: 10rem;
+}
+.msg{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    bottom: 10rem;
+}
+h2{
+    color: #FFF;
+
+text-align: center;
+font-family: Roboto;
+font-size: 91px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+letter-spacing: 9.1px;
+}
+p{
+    color: #FFF;
+
+text-align: center;
+font-family: Roboto;
+font-size: 41px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+letter-spacing: 4.1px;
+}
+.rulesBtn{
+    position:absolute;
+    left:60rem;
+    bottom:1rem;
+    width: 119px;
+    height: 40px;
+    border-radius: 10px;
+    border: 2px solid #FFF;
+    background: rgba(217, 217, 217, 0.00);
+}
+.rulesPart{
+    width: 298px;
+    height: 325px;
+    border-radius: 13px;
+    border: 7px solid #FFF;
+    position:absolute;
+    left:59rem;
+    bottom:4rem;
+    background-color:#004429;
+}                            
+.rulesBox{
+    background-color:#004429;
+    margin:1.2rem;
+}
+.rulesHeader{
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 29px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    align-items: center;
+    margin: 5px 0 5px 60px;
+    background-color:#004429;
+}
+.rulePoints li{
+    background-color:#004429;
+    color:white;
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;    
+    line-height: normal;
+    padding:8px;
+}
+li::marker{
+    color:yellow;
+    font-size: 1.2rem;
+}
+ul{
+    list-style-type: square;
+}
+.closeBtn{
+    position:absolute;
+    align-items:end;
+    background-color: red;
+    position: absolute;
+    left: 17rem;
+    bottom: 19rem;
+    border-radius: 100%;
+    border: 7px solid white;
+}
+.closeBtn img{
+    width:40px;
+    height:40px;
+    background-color: red;
+    border-radius: 100%;
+}
