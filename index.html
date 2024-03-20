@@ -3,111 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rock Paper Scissor Game</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Rock-Paper-Scissors</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div  class="container">
-        
-        <!---------------------------------------------Display Scores------------------------------------------->
+    <div class="main-container">
 
-        <div class="box">
-            <div class="headings">
-                <h1>ROCK</h1>
-                <h1>PAPER</h1> 
-                <h1>SCISSORS</h1> 
-            </div>
-            <div class="Score-box">
-                <div id="Computer-Score-display">COMPUTER <br> SCORE <br> <span id="Comp-Score-display">0</span></div>
-                <div id="Your-Score-display">YOUR <br> SCORE <br> <span id="User-Score-display">0</span></div>
-            </div>
-        </div>
-
-        <!----------------------------------------------Select Options------------------------------------------->
-        <div id="options">
-            <div class="select-options">
-                <a href="#" id="rockbtn"><img src="Images/Rock.png" alt="rock" srcset=""></a>
-                <img class="line1" src="Images/Line.png" alt="" srcset="">
-                <a href="#" id="scissorbtn"><img src="Images/Scissor.png" alt="scissor" srcset=""></a>
-            </div>
-            <div class="select-options-2">
-                <img class="line2" src="Images/Line.png" alt="" srcset="">
-                <a href="#" id="paperbtn"><img src="Images/Paper.png" alt="paper" srcset=""></a>
-                <img class="line3" src="Images/Line.png" alt="" srcset="">
-            </div>
-        </div>
-        <div class="allbtns">
-            <button id="Rules-btn">RULES</button>  
-            <button id="Next-btn">NEXT</button>
-        </div>
-
-            <!--------------------------------------------Rules------------------------------------------------>
-
-        <div id="rules-box">
-            <a href="#" id="cancel-btn"><img src="Images/Cancel.png" alt="" srcset=""></a>
-            <h4>Game Rules</h4>
-            <ul style="list-style-type:square">
-                <li>Rock beats scissors, scissors beat paper, and paper beats rock.</li>
-                <li>Agree ahead of time whether you’ll count off “rock, paper, scissors, shoot” or just “rock, paper, scissors.”</li>
-                <li>Use rock, paper, scissors to settle minor decisions or simply play to pass the time</li>
-                <li>If both players lay down the same hand, each player lays down another hand</li>
-            </ul>
-        </div>
-        
-        <div id="match-title">
-            <h5>YOU PICKED</h5>
-            <h5>PC PICKED</h5>
-
-        </div>
-
-         <!--------------------------------------------Winner's highlight-------------------------------------------->
-        <div id="win-box">
-            <div id="winner-background">
-                <div>
-                    <img id="user-Winner-Background" src="Images/Winnerhighlight.png" alt="" srcset="">
-                </div>
-                <div>
-                    <img id="comp-Winner-Background" src="Images/Winnerhighlight.png" alt="" srcset="">
-                </div>
-            </div>
-        </div>
-
-         <!--------------------------------------------Match Area------------------------------------------------>
-        <div id="match-area">
-            <div id="you-picked"></div>
-                 <div id="result"></div>
-            <div>
-                <button id="play-again">PLAY AGAIN</button>
+        <!--💚💚💚💚💚 header part  💚💚💚💚💚-->
+        <header class="head-section">
+            <h1>ROCK  <br> PAPER <br> SCISSORS</h1>
+            <div class="result-ScorBox">
+                <div class="score-box" >
+                <h3>COMPUTER<br> SCORE</h3>   <span id="compScore">0</span>
+                 </div>
+                 <div class="score-box"  >
+                    <h3>YOUR  <br>SCORE</h3> <span id="userScore">0</span>
+                 </div>
             </div> 
-                <div id="Pc-picked"></div>
-        </div>
+           
+        </header>
 
+
+<!--💚💚💚💚💚 triangle part  💚💚💚💚💚-->
+<div class="game-triangle">
+   <div class="game-part">
+    <div class="circles c1" >
+        <img src="images/rock.png"  alt="rock" id="rock" class="options">
     </div>
-     <!--------------------------------------------WINNERS PAGE------------------------------------------------>
-    <div class="container-two">
-        <div id="Winner-page">
-            <img id="trophy-img" src="Images/trophy.png" alt="">
-            <h1 id="txt1">HURRAY!!</h1>
-            <span id="txt2">YOU WON THE GAME</span>
-            <button id="play-again-btn-win-page">PLAY AGAIN</button>
-            <button id="Rules-btn-win-page">RULES</button>  
-        </div>
+    <div class="line-1">
+        <img src="images/Line 1.png" alt="line1">
+    </div>
+    <div class="circles c2">
+        <img src="images/scissor.png" alt="scissor"  id="scissor" class="options">
+    </div>
+   </div>
+   <div class="game-part">
+    
+    <div class="line-3">
+        <img src="images/Line 3.png" alt="line1">
+    </div>
+    <div class="circles c3" >
+        <img src="images/paper.png" alt="scissor" id="paper" class="options">
+    </div>
+    <div class="line-2">
+        <img src="images/Line 2.png" alt="line1">
+    </div>
+   </div>
 
-         <!--------------------------------------------Rules for winner page-------------------------------------->
-        <div id="rules-box-winner-page">
-            <a href="#" id="cancel-btn-two"><img src="Images/Cancel.png" alt="" srcset=""></a>
-            <h4>Game Rules</h4>
-            <ul style="list-style-type:square">
+</div>
+
+
+
+<!--  💚💚💚💚💚  Result part   💚💚💚💚💚 -->
+<div class="gameResult">
+    <div id="userPicked" >
+        <h1>you picked</h1>
+        <div class="result">
+        </div>
+       
+    </div>
+
+    <div class="winHeading">
+        <h1 id="win"></h1>
+        <span id="AGAINST-PC">AGAINST PC</span>
+            <button class="play-again">play again</button>
+            <button class="play-again"  id="replay" onclick="window.location.reload()">replay</button>
+    </div>
+   
+   
+    <div id="pcPicked" >
+        <h1>pc picked</h1>
+              
+        <div class="result">
+        </div>
+        
+    </div>
+
+ 
+</div>
+
+        <!--💚💚💚💚💚 Game Rules Card---  part  💚💚💚💚💚--> 
+    
+        <div class="game-rules" id="rulesBox"  >
+            <h1>Game Rules</h1>
+            <ul>
                 <li>Rock beats scissors, scissors beat paper, and paper beats rock.</li>
                 <li>Agree ahead of time whether you’ll count off “rock, paper, scissors, shoot” or just “rock, paper, scissors.”</li>
                 <li>Use rock, paper, scissors to settle minor decisions or simply play to pass the time</li>
                 <li>If both players lay down the same hand, each player lays down another hand</li>
             </ul>
+           <div id="cross-circl">
+            <img  class="x-img" src="images/cross.png" alt="cross">
+           </div>
+        </div> 
+
+
+        
+        <div class="buttons">
+            <button id="rules-btn" class="btn">Rules</button>
         </div>
+        <button id="next-btn" ><a href="winner.html" target="_top">NEXT</a></button>
         
     </div>
-    
-
-    <script src="main.js"></script>
 </body>
+<script src="js/script.js"></script>
 </html>
